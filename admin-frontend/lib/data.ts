@@ -13,6 +13,7 @@ export type Agent = {
   name: string;
   category: string;
   phone: string;
+  password : string;
   ville: string;
   role : "AGENT",
   published: boolean;
@@ -28,8 +29,8 @@ export type Reservation = {
 
 
 export const Agents: Agent[] = [
-  { id: "a1",  name: "Karim Plombier", category: "Plomberie", phone: "+216 20 111 222", ville: "Tunis",role : "AGENT", published: true },
-  { id: "a2", name: "Yassine Technicien", category: "Électricité", phone: "+216 22 333 444", ville: "Sfax",role : "AGENT", published: false },
+  { id: "a1",  name: "Karim Plombier", category: "Plomberie", phone: "+216 20 111 222", password:"karim123" , ville: "Tunis",role : "AGENT", published: true },
+  { id: "a2", name: "Yassine Technicien", category: "Électricité", phone: "+216 22 333 444", password:"yassine123",ville: "Sfax",role : "AGENT", published: false },
 ];
 
 export const Reservations: Reservation[] = [
