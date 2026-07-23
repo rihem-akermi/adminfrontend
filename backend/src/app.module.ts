@@ -12,6 +12,8 @@ import { UsersModule } from './users/users.module';
 import { ContactsModule } from './contacts/contacts.module';
 import { CategoriesModule } from './categories/categories.module';
 import { PublicationsModule } from './publications/publications.module';
+import { OffersModule } from './offers/offers.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 
 
@@ -22,7 +24,9 @@ import { PublicationsModule } from './publications/publications.module';
     ConfigModule.forRoot(),
     ContactsModule,
     CategoriesModule,
-    PublicationsModule//charge automatiquement le .env
+    PublicationsModule,
+    OffersModule,
+    PrismaModule
   ],
   controllers: [],
   providers: [],
